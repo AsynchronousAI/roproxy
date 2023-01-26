@@ -12,7 +12,7 @@ SUBDOMAINS = {}
 def proxy(path):
   data = get(f'{SITE_NAME}{path}').content
 
-  
+   #
   data = data.replace(CLEAN_SITE_NAME.encode(), CURRENT_SITE_NAME.encode()) # change all Roblox.Com refrences to this site
   
   return data
